@@ -1,5 +1,10 @@
 ---
 - name: set yum repository for the nginx
-  copy: src=nginx.repo dest=/etc/yum.repos.d/nginx.repo mode=0644 owner=root group=root
+  copy:
+    src: nginx.repo
+    dest: /etc/yum.repos.d/nginx.repo
+    mode: 0644
+    owner: root
+    group: root
   notify: yum update
   ignore_errors: yes

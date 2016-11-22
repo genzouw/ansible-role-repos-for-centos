@@ -6,4 +6,3 @@
 - include: postgresql.yml
 - include: nginx.yml
 - include: mongodb.yml
-- include: td-agent.yml
